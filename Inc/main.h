@@ -88,7 +88,7 @@
 #define PAS_EXTI8_EXTI_IRQn EXTI9_5_IRQn
 
 //#define NCTE
-//#define LEGALFLAG
+#define LEGALFLAG
 #define BATTERYVOLTAGE_MAX 59000
 #define R_TEMP_PULLUP 0
 #define INT_TEMP_25 0
