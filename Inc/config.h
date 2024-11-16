@@ -86,7 +86,7 @@
 //power settings
 #define PH_CURRENT_MAX 2200
 #define BATTERYCURRENT_MAX 28000
-#define REVERSE -1 //1 for normal direction, -1 for reverse
+#define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
 #define VOLTAGE_MIN 1320 //33V
 
@@ -98,7 +98,7 @@
 
 //---------------------------------------------------------------------
 //Display settings
-#define DISPLAY_TYPE DISPLAY_TYPE_KUNTENG
+#define DISPLAY_TYPE DISPLAY_TYPE_KINGMETER_901U
 
 //---------------------------------------------------------------------
 //Regen settings
