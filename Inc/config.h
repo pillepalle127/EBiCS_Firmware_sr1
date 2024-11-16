@@ -85,14 +85,14 @@
 //---------------------------------------------------------------------
 //power settings
 #define PH_CURRENT_MAX 1800
-#define BATTERYCURRENT_MAX 28000
+#define BATTERYCURRENT_MAX 30000
 #define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
 #define VOLTAGE_MIN 1320 //33V
 
 //---------------------------------------------------------------------
 //torquesensor settings
-#define TS_COEF 2000
+#define TS_COEF 1800
 #define TS_MODE
 #define TQONAD1
 
