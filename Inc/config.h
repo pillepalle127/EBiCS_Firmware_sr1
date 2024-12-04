@@ -69,7 +69,7 @@
 //---------------------------------------------------------------------
 //Throttle settings
 #define THROTTLE_OFFSET 1250   //only default value, throttle offset is set at startup automatically
-#define THROTTLE_MAX 2850
+#define THROTTLE_MAX 2950
 //#define THROTTLE_OVERRIDE //führt zum Pulsen des Motors im Stand mit DMS
 
 //--------------------------------------------------------------------
@@ -84,15 +84,15 @@
 
 //---------------------------------------------------------------------
 //power settings
-#define PH_CURRENT_MAX 1800
+#define PH_CURRENT_MAX 2000
 #define BATTERYCURRENT_MAX 30000
 #define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
-#define VOLTAGE_MIN 1320 //33V
+#define VOLTAGE_MIN 1720 //33V
 
 //---------------------------------------------------------------------
 //torquesensor settings
-#define TS_COEF 1800
+#define TS_COEF 1700
 #define TS_MODE
 #define TQONAD1
 
