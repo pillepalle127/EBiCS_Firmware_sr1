@@ -825,8 +825,8 @@ int main(void)
 
 #ifdef TS_MODE //torque-sensor mode
 				//calculate current target form torque, cadence and assist level
-				int32_temp_current_target = (TS_COEF*(int32_t)(MS.assist_level)* ((uint32_torque_cumulated*PAS_IMP_PER_TURN_RECIP_MULTIPLIER)>>8)/uint32_PAS)>>8; // >>8 aus KM5S-Protokoll Assistlevel 0..255
-
+				int32_temp_current_target = (TS_COEF*(int32_t)(assist_factor[MS.assist_level])* ((uint32_torque_cumulated*PAS_IMP_PER_TURN_RECIP_MULTIPLIER)>>8)/uint32_PAS)>>8; // >>8 aus KM5S-Protokoll Assistlevel 0..255
+			//	int32_temp_current_target = (TS_COEF*(int32_t)(assist_factor[MS.assist_level])* (uint32_torque_cumulated>>5)/uint32_PAS)>>8; //>>5 aus Mittelung über eine Kurbelumdrehung, >>8 aus KM5S-Protokoll Assistlevel 0..255
 				//limit currest target to max value
 				if(int32_temp_current_target>PH_CURRENT_MAX) int32_temp_current_target = PH_CURRENT_MAX;
 				//set target to zero, if pedals are not turning
