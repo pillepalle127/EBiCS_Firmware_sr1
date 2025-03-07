@@ -187,6 +187,13 @@ int16_t i16_cosinus=0;
 char buffer[100];
 char char_dyn_adc_state_old=1;
 const uint8_t assist_factor[10]={0, 51, 102, 153, 204, 255, 255, 255, 255, 255};
+//const uint8_t assist_factor[10]={0, 91, 132, 173, 214, 255, 255, 255, 255, 255};
+//const uint8_t assist_factor[10]={0, 67, 114, 161, 208, 255, 255, 255, 255, 255};
+//const uint8_t assist_factor[10]={0, 75, 120, 165, 210, 255, 255, 255, 255, 255};
+//const uint8_t assist_factor[10]={0, 111, 147, 183, 219, 255, 255, 255, 255, 255};
+
+
+
 const uint8_t assist_profile[2][6]= {	{0,10,20,30,45,48},
 		{64,64,128,200,255,0}};
 
@@ -507,7 +514,7 @@ int main(void)
 	ui16_ph1_offset=temp1>>5;
 	ui16_ph2_offset=temp2>>5;
 	ui16_ph3_offset=temp3>>5;
-	ui16_throttle_offset=(temp4>>5)+5;
+	ui16_throttle_offset=(temp4>>5)+15; // mehr Spielraum für Sensoroffset
 
 #ifdef DISABLE_DYNAMIC_ADC // set  injected channel with offsets
 	ADC1->JSQR=0b00100000000000000000; //ADC1 injected reads phase A JL = 0b00, JSQ4 = 0b00100 (decimal 4 = channel 4)
@@ -2161,8 +2168,8 @@ int main(void)
 		{
 			ui8_Push_Assist_flag=0;
 		}
-//	    if( KM.Settings.Reverse)i8_direction = -1;
-//	    else i8_direction = 1;
+	    if( KM.Settings.Reverse)i8_direction = -1;
+	    else i8_direction = 1;
 		//    MP.speedLimit=KM.Rx.SPEEDMAX_Limit;
 		//    MP.battery_current_max = KM.Rx.CUR_Limit_mA;
 
