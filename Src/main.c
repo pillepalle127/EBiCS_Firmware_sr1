@@ -186,7 +186,7 @@ int16_t i16_sinus=0;
 int16_t i16_cosinus=0;
 char buffer[100];
 char char_dyn_adc_state_old=1;
-const uint8_t assist_factor[10]={0, 51, 102, 153, 204, 255, 255, 255, 255, 255};
+const uint8_t assist_factor[10]={0, 21, 62, 93, 184, 255, 255, 255, 255, 255};
 //const uint8_t assist_factor[10]={0, 91, 132, 173, 214, 255, 255, 255, 255, 255};
 //const uint8_t assist_factor[10]={0, 67, 114, 161, 208, 255, 255, 255, 255, 255};
 //const uint8_t assist_factor[10]={0, 75, 120, 165, 210, 255, 255, 255, 255, 255};
