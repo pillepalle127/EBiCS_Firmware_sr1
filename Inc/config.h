@@ -45,11 +45,17 @@
 
 //----------------------------------------------------------------------
 //Battery bar settings for Kunteng and Bafang Display
-#define BATTERY_LEVEL_1 323000
+/*#define BATTERY_LEVEL_1 323000
 #define BATTERY_LEVEL_2 329000
 #define BATTERY_LEVEL_3 344000
 #define BATTERY_LEVEL_4 368000
-#define BATTERY_LEVEL_5 380000
+#define BATTERY_LEVEL_5 380000*/
+
+#define BATTERY_LEVEL_1 460000
+#define BATTERY_LEVEL_2 480000
+#define BATTERY_LEVEL_3 500000
+#define BATTERY_LEVEL_4 520000
+#define BATTERY_LEVEL_5 560000
 
 //----------------------------------------------------------------------
 //PI-control factor settings
@@ -73,13 +79,13 @@
 //Throttle settings
 #define THROTTLE_OFFSET 1250   //only default value, throttle offset is set at startup automatically
 #define THROTTLE_MAX 2850
-#define THROTTLE_OVERRIDE
+//#define THROTTLE_OVERRIDE SR
 
 //--------------------------------------------------------------------
 //Speed settings
-#define WHEEL_CIRCUMFERENCE 2200
-#define GEAR_RATIO 11 //11 for BionX IGH3
-#define SPEEDLIMIT 25
+#define WHEEL_CIRCUMFERENCE 2105
+#define GEAR_RATIO 95
+#define SPEEDLIMIT 26
 #define PULSES_PER_REVOLUTION 1
 #define SPEEDSOURCE INTERNAL
 #define SPEEDFILTER 1
@@ -87,21 +93,21 @@
 
 //---------------------------------------------------------------------
 //power settings
-#define PH_CURRENT_MAX 1200
-#define BATTERYCURRENT_MAX 14000
+#define PH_CURRENT_MAX 2000
+#define BATTERYCURRENT_MAX 30000
 #define REVERSE 1 //1 for normal direction, -1 for reverse
 #define PUSHASSIST_CURRENT 300
-#define VOLTAGE_MIN 1320 //33V
+#define VOLTAGE_MIN 1620 //
 
 //---------------------------------------------------------------------
 //torquesensor settings
-#define TS_COEF 2400
+#define TS_COEF 2000
 #define TS_MODE
-//#define TQONAD1
+#define TQONAD1
 
 //---------------------------------------------------------------------
 //Display settings
-#define DISPLAY_TYPE DISPLAY_TYPE_KINGMETER_901U
+#define DISPLAY_TYPE DISPLAY_TYPE_KUNTENG
 
 //---------------------------------------------------------------------
 //Regen settings
